@@ -10,10 +10,6 @@ int main()
      scanf("%d",&RQ[i]);
     printf("Enter initial head position\n");
     scanf("%d",&initial);
-    
-    // logic for sstf disk scheduling
-    
-        /* loop will execute until all process is completed*/
     while(count!=n)
     {
         int min=1000,d,index;
@@ -29,8 +25,6 @@ int main()
         }
         TotalHeadMoment=TotalHeadMoment+min;
         initial=RQ[index];
-        // 1000 is for max
-        // you can use any number
         RQ[index]=1000;
         count++;
     }
